@@ -10,12 +10,28 @@ APP_PORT=4000
 ```
 After performing an `npm install`, the application can be run with `npm run start`.   
 
+Once the application is up and running, it is possible to access the endpoints in the browser by visiting
+```bash
+http://localhost:4000/api/books
+```
+to list all the books.   
+
+![All Books](public/assets/images/fastify-api-app-books-endpoint.png)   
+
+To list a book by id, visit
+```bash
+http://localhost:4000/api/books/21
+```
+![Book by Id](public/assets/images/fastify-api-app-book-by-id-endpoint.png)   
+
 To run the application within a Docker container, make sure that you have a Docker daemon running (something like [Docker Desktop](https://docs.docker.com/get-docker/), [Rancher Desktop](https://docs.rancherdesktop.io/), or [colima](https://github.com/abiosoft/colima#getting-started) for MacOs) and that your laptop/desktop is authenticated to push/pull from [DockerHub](https://hub.docker.com/) and then run the following commands inside the same directory that the Dockerfile is in:
 ```bash
 docker build . -t fastify-api-app:1.0.0
 docker run -d --name fastify-api-app -p :8080 fastify-api-app:1.0.0
 ```
-If the image is successfully built, it can be pushed to [DockerHub](https://hub.docker.com/) with:
+![Docker Container Running](public/assets/images/docker-run-fastify-api-app.png)   
+
+If the image is successfully built and runs, it can be pushed to [DockerHub](https://hub.docker.com/) with:
 ```bash
 docker push yourDockerHubAccountName/fastify-api-app:1.0.0
 ```
