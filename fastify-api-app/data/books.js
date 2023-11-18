@@ -1,0 +1,162 @@
+const books = [
+    {
+        id: 1,
+        title: "Harry Potter and the Philosopher\'s Stone",
+        author: "J.K Rowling",
+        originallyPublished: 1997,
+    },
+    {
+        id: 2,
+        title: "Harry Potter and the Chamber of Secrets",
+        author: "J.K Rowling",
+        originallyPublished: 1998,
+    },
+    {
+        id: 3,
+        title: "Harry Potter and the Prisoner of Azkaban",
+        author: "J.K Rowling",
+        originallyPublished: 1999,
+    },
+    {
+        id: 4,
+        title: "Harry Potter and the Goblet of Fire",
+        author: "J.K Rowling",
+        originallyPublished: 2000,
+    },
+    {
+        id: 5,
+        title: "Harry Potter and the Order of the Phoenix",
+        author: "J.K Rowling",
+        originallyPublished: 2003,
+    },
+    {
+        id: 6,
+        title: "Harry Potter and the Half Blood Prince",
+        author: "J.K Rowling",
+        originallyPublished: 2005,
+    },
+    {
+        id: 7,
+        title: "Harry Potter and the Deathly Hallows",
+        author: "J.K Rowling",
+        originallyPublished: 2007,
+    },
+    {
+        id: 8,
+        title: "A Game of Thrones",
+        author: "J.K Rowling",
+        originallyPublished: 1996,
+    },
+    {
+        id: 9,
+        title: "A Clash of Kings",
+        author: "George R. R. Martin",
+        originallyPublished: 1998,
+    },
+    {
+        id: 10,
+        title: "A Storm of Swords",
+        author: "George R. R. Martin",
+        originallyPublished: 2000,
+    },
+    {
+        id: 11,
+        title: "A Feast for Crows",
+        author: "George R. R. Martin",
+        originallyPublished: 2005,
+    },
+    {
+        id: 12,
+        title: "A Dance with Dragons",
+        author: "George R. R. Martin",
+        originallyPublished: 2011,
+    },
+    {
+        id: 13,
+        title: "A Tale of Two Cities",
+        author: "Charles Dickens",
+        originallyPublished: 1859,
+    },
+    {
+        id: 14,
+        title: "Nicholas Nickleby",
+        author: "Charles Dickens",
+        originallyPublished: 1839,
+    },
+    {
+        id: 15,
+        title: "Great Expectations",
+        author: "Charles Dickens",
+        originallyPublished: 1861,
+    },
+    {
+        id: 16,
+        title: "Hard Times",
+        author: "Charles Dickens",
+        originallyPublished: 1854,
+    },
+    {
+        id: 17,
+        title: "Oliver Twist",
+        author: "Charles Dickens",
+        originallyPublished: 1838,
+    },
+    {
+        id: 18,
+        title: "Sense and Sensibility",
+        author: "Jane Austen",
+        originallyPublished: 1811,
+    },
+    {
+        id: 19,
+        title: "Pride and Prejudice",
+        author: "Jane Austen",
+        originallyPublished: 1813,
+    },
+    {
+        id: 20,
+        title: "Crime and Punishment",
+        author: "Fyodor Dostoevsky",
+        originallyPublished: 1866,
+    },
+    {
+        id: 21,
+        title: "The Brothers Karamazov",
+        author: "Fyodor Dostoevsky",
+        originallyPublished: 1880,
+    },
+    {
+        id: 22,
+        title: "Nineteen Eighty-Four",
+        author: "George Orwell",
+        originallyPublished: 1949,
+    },
+    {
+        id: 23,
+        title: "Animal Farm",
+        author: "George Orwell",
+        originallyPublished: 1945,
+    },
+    {
+        id: 24,
+        title: "The Lord of the Rings and The Fellowship of the Ring",
+        author: "J. R. R. Tolkien",
+        originallyPublished: 1954,
+    },
+    {
+        id: 25,
+        title: "The Lord of the Rings and The Two Towers",
+        author: "J. R. R. Tolkien",
+        originallyPublished: 1954,
+    },
+    {
+        id: 26,
+        title: "The Lord of the Rings and The Return of the King",
+        author: "J. R. R. Tolkien",
+        originallyPublished: 1955,
+    },
+];
+
+module.exports = {
+    books,
+}
