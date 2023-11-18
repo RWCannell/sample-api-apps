@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+const port = process.env.APP_PORT;
+
 const app = require('fastify')({
     logger: true
 });
@@ -27,7 +31,7 @@ bookRoutes.forEach((route, index) => {
     app.route(route);
 });
 
-app.listen({ port: 4000 }, (err, address) => {
+app.listen({ port: port }, (err, address) => {
     if (err) {
         app.log.error(err)
         process.exit(1)
