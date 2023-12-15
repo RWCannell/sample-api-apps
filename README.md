@@ -35,3 +35,21 @@ If the image is successfully built and runs, it can be pushed to [DockerHub](htt
 ```bash
 docker push yourDockerHubAccountName/fastify-api-app:1.0.0
 ```
+
+### databases
+#### MySQL
+A MySQL database is created to run inside a Docker container. This is a simple database that consists of only one table. The table contains a list of books. The MySQL database gets initialised and populated with data from the `books-db-init.sql` script.   
+Environment variables need to be passed into the Docker `build` command as follows:
+```bash
+docker build -t yourDockerHubAccountName/mysql_books_database:1.0.0 \ 
+--build-arg MYSQL_PASSWORD=password \ 
+--build-arg MYSQL_ROOT_PASSWORD=password .
+```
+To run the container in detached mode, 
+```bash
+docker run -d --name mysql_books_database -p :3306 yourDockerHubAccountName/mysql_books_database:1.0.0
+```
+Create a public repository in Dockerhub and then push this image as follows:
+```bash
+docker push yourDockerHubAccountName/mysql_books_database:1.0.0
+```
